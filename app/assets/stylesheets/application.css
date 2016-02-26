@@ -14,6 +14,64 @@
  *= require_self
  */
 
+
+@media screen and (max-width: 1000px) {
+    .header-name {
+    font-size: 25px;
+    color: #004d40 !important;
+    margin-left: 40% !important;
+    margin-top: 80%;
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .header-underline {
+    	margin-left: 40% !important;
+    	border-color: white !important;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+
+    .header-icons {
+    	color: #b2dfdb !important;
+    }
+
+   
+}
+
+@media screen and (max-width: 1000px) {
+    .header-text {
+	  	display: none;
+	    }
+}
+
+.header-icons {
+	color: black;
+}
+
+.header-underline {
+	 margin-left: 65%;
+	 border-color: #263238;
+}
+
+.header-text {
+	 margin-left: 65%;
+	 color: #263238;
+}
+
+.header-name {
+	margin-left: 65%;
+	color: #009688;
+}
+
+
+
 .name-hidden {
 	display: none;
 }
