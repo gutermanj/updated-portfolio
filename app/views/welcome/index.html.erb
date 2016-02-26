@@ -12,17 +12,7 @@
 </head>
 <body>
   <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
+    
   </nav>
 
   <div id="index-banner" class="parallax-container">
@@ -32,8 +22,15 @@
         <h1 class="header teal-text text-lighten-2 header-name name-hidden animated" style="margin-left: 65%;">Julian Guterman</h1>
         <div class="row center">
           <h5 class="header light left-align header-text text-hidden animated" style="margin-left: 65%; color:#263238;">Junior Full-Stack Developer</h5>
+
           <hr class="header light left-align header-underline text-hidden animated" style="margin-left: 65%; border-color: #263238;">
         </div>
+
+        <span>
+        <h5 class="header light right-align header-icon-1 text-hidden animated" style="margin-left: 65%;"><a href="https://www.github.com/gutermanj" class="black-text"><i class="fa fa-github"></i></a></h5>
+        <h5 class="header light right-align header-icon-2 text-hidden animated" style="margin-left: 65%;"><a href="https://www.linkedin.com/in/gutermanj" class="black-text"><i class="fa fa-linkedin"></i></a></h5>
+        <h5 class="header light right-align header-icon-3 text-hidden animated" style="margin-left: 65%;"><a href="https://www.twitter.com/julianguterman" class="black-text"><i class="fa fa-twitter"></i></a></h5>
+    </span>
         
         <br><br>
 
@@ -121,7 +118,7 @@
             <h2 class="center teal-text"><i class="fa fa-linkedin"></i></h2>
             <h5 class="center"><a href="https://www.linkedin.com/in/gutermanj" style="color: black;"><u>LinkedIn</u></a></h5>
 
-            <p class="light center-align">Please connect with me on LinkedIn! It provides a detailed background of my professional experience as well as short and long-term goals.</p>
+            <p class="light center-align">Please connect with me on LinkedIn! It provides a detailed background of my professional experience as well as my short and long-term goals.</p>
           </div>
         </div>
       </div>
@@ -135,11 +132,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">Let's get together</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="/assets/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="/assets/racoon.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -147,9 +144,24 @@
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h3><i class="mdi-content-send teal-text"></i></h3>
+          <h4>Contact Me</h4>
+         	<div class="form">
+         		 <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <br><br>
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
+
+         	</div>
         </div>
       </div>
 
@@ -159,52 +171,37 @@
 
 
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="/assets/background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
+  
 
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">Julian Guterman</h5>
+          <p class="grey-text text-lighten-4">Junior Full-Stack Web Developer<br>Ruby on Rails | JavaScript | HTML5 | CSS3</p>
+        </div>
 
 
-        </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Contact</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Phone (561) 381 1223</a></li>
+            <li><a class="white-text" href="#!">Email gutermanj@gmail.com</a></li>
+            <li><a class="white-text" href="#!">Twitter @JulianGuterman</a></li>
           </ul>
         </div>
       </div>
     </div>
+
+
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      <i class="fa fa-copyright"> Julian Guterman 2016</i>
       </div>
     </div>
   </footer>
+
+
 
 
   <!--  Scripts-->

@@ -27,6 +27,21 @@ $(document).ready(function() {
 		$('.header-text').addClass('bounceInRight');
 	});
 
+	$('.header-icon-1').addClass('animated').delay(1300).queue(function(next) {
+		$('.header-icon-1').removeClass('text-hidden');
+		$('.header-icon-1').addClass('bounceInRight');
+	});
+
+	$('.header-icon-2').addClass('animated').delay(1500).queue(function(next) {
+		$('.header-icon-2').removeClass('text-hidden');
+		$('.header-icon-2').addClass('bounceInRight');
+	});
+
+	$('.header-icon-3').addClass('animated').delay(1700).queue(function(next) {
+		$('.header-icon-3').removeClass('text-hidden');
+		$('.header-icon-3').addClass('bounceInRight');
+	});
+
 	$('.header-underline').addClass('animated').delay(1200).queue(function(next) {
 		$('.header-underline').removeClass('text-hidden');
 		$('.header-underline').addClass('bounceInRight');
